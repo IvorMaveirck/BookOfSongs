@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Book of Songs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <header>
@@ -18,13 +18,13 @@
         </div>
     </div>
 </header>
-<body style="background-color: khaki">
+<body>
 
-    <div >
-
-    </div>
-
-
+<table>
+    <tr th:each="song : ${songs}">
+        <td th:text="${song.getTitle()}"></td>
+    </tr>
+</table><br>
 
 
 </body>
