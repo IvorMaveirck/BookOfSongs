@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -13,15 +14,18 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 <div th:replace="fragments/layout :: menu"></div>
 
-<table>
+<table class="table table-striped " style="width: 30%">
     <tr th:each="song : ${songs}">
-        <td th:text="${song.getTitle()}"></td>
+        <td>
+        <a th:href="@{/song/{id}(id=${song.get_id()})}" th:text="${song.getTitle()}"></a>
+        </td>
     </tr>
 </table><br>
 

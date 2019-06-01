@@ -1,4 +1,4 @@
- INSERT INTO categorie( category) VALUES
+INSERT INTO categorie( category) VALUES
  ( "Harcerskie"),
  ( "Chescijanskie"),
  ( "Szanty"),
