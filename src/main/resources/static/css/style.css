@@ -17,3 +17,9 @@ body {
     z-index: 1;
 }
 
+.table-black:nth-child(even) {
+    background-color: #292b2c;
+    color: #fff;
+
+}
+

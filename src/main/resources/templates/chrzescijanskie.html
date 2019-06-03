@@ -23,9 +23,9 @@
 
 <h4 class="text-lg-left" style="margin-left: 200px"> Lista utworów</h4>
 <table class="table table-hover" style="width: 30%; float: left; text-align: center; margin-left: 50px">
-    <tr th:each="song : ${songs}">
+    <tr th:each="song : ${songId2}">
         <td >
-            <a style="color: black" th:href="@{/song/{id}(id=${song.get_id()})}" th:text="${song.getTitle()}"></a>
+            <a style="color: black" th:href="@{/chrzescijanskieSong/{id}(id=${song.get_id()})}" th:text="${song.getTitle()}"></a>
         </td>
     </tr>
 </table>
