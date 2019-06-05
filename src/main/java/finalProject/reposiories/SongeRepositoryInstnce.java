@@ -21,4 +21,10 @@ public class SongeRepositoryInstnce {
 
         return resultList;
     }
+
+    public List<Song> findAllSongsBySearch(String searchText) {
+        List resultList = em.createQuery("Select v from Song v where v.title  like '%" + searchText +"%'").getResultList();
+
+        return resultList;
+    }
 }

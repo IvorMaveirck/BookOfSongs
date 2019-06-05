@@ -22,4 +22,5 @@ public class VerseRepositoryInstnce{
 
         return resultList;
     }
+
 }
