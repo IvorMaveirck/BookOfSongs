@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bookOfSongs" />
+        <module name="BookOfSongs" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BookOfSongs" options="-parameters" />
       <module name="bookOfSongs" options="-parameters" />
     </option>
   </component>

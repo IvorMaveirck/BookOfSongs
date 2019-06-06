@@ -39,3 +39,5 @@ INSERT INTO verse(text_of_verse, chords_of_verse, number_of_verse, song_id) VALU
 ("Tańcz, tańcz, gdy zabawa trwa,", "D GA",10,3),
 ("Tańcz, tańcz, ze mną dziewczyno,", "D D   (h h",11,3),
 ("Póki jeszcze muzyka nam gra.", "h AD  G AD)",12,3);
+
+INSERT INTO role VALUES (1,'ADMIN');
